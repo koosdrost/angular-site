@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/** Hele scherm **/
+.example-container {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/**  sidenav zelf **/
+.example-sidenav {
+  padding: 50px;
+}
+
+/**  inhoud van de sitenav **/
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Hele scherm **/
+.projectLogo {
+  height: 100px;
+  width: 300px;
+}
+
+/** Knoppen in de sidenav **/
+.projectBtn {
+  width: 100%;
+  min-width: 300px;
+}
+
+/** Div rond de projectknoppen **/
+.projectClass {
+  padding: 10px;
+}
+
+/**  centreren in scherm **/
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+/**  onderaan in scherm **/
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}

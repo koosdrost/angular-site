@@ -1,0 +1,28 @@
+<mat-drawer-container class="example-container">
+
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <h1>Bio</h1>
+    <bio></bio>
+
+    <h1>Projecten</h1>
+    <projects></projects>
+
+    <button type="button" mat-button (click)="drawer.toggle(); showSidebar = false" *ngIf="showSidebar == true" class="projectBtn">Laat minder zien</button>
+
+    <div class="footer">
+      <div class="projectClass">
+        <mat-slide-toggle [(ngModel)]="isChecked" class="center" color="primary">
+            <div *ngIf="isChecked">{{version}}</div>
+        </mat-slide-toggle>
+      </div>
+    </div>
+  </mat-drawer>
+
+  <main></main>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle(); showSidebar = true" *ngIf="showSidebar == false">Laat meer zien</button>
+  </div>
+
+</mat-drawer-container>
+
