@@ -8,12 +8,11 @@ import {ProjectService} from "../project.service";
 })
 export class MainComponent implements OnInit {
 
-  message = 'project-default';
+  message = 'main-default-message';
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
     this.projectService.currentMessage.subscribe(message => this.message = message);
   }
-
 }

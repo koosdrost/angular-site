@@ -1,8 +1,27 @@
 <div style="padding: 20px;">
-  <h3>Beetje historie</h3>
 
-  <div style="padding: 40px">
-    <div> {{message}} asdfasdfasdfasdfasdfasdfasdf asdf
+    <div *ngIf="this.message == 'BIO'">
+      <bio></bio>
     </div>
-  </div>
+
+    <div *ngIf="this.message == 'ING'">
+      <ing></ing>
+    </div>
+
+    <div *ngIf="this.message == 'TUD'">
+      <tud></tud>
+    </div>
+
+    <div *ngIf="this.message == 'DUO'">
+      <duo></duo>
+    </div>
+
+    <div *ngIf="this.message == 'DJI'">
+      <dji></dji>
+    </div>
+
+    <div *ngIf="this.message == 'EXS'">
+        <exs></exs>
+    </div>
+
 </div>

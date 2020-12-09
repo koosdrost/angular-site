@@ -1,13 +1,6 @@
-<mat-drawer-container class="example-container">
-
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <h1>Bio</h1>
-    <bio></bio>
-
-    <h1>Projecten</h1>
-    <projects></projects>
-
-    <button type="button" mat-button (click)="drawer.toggle(); showSidebar = false" *ngIf="showSidebar == true" class="projectBtn">Laat minder zien</button>
+<mat-drawer-container class="sidenav-container">
+  <mat-drawer #drawer mode="side">
+  <menu style="padding-inline-start: 0px"></menu>
 
     <div class="footer">
       <div class="projectClass">
@@ -16,13 +9,16 @@
         </mat-slide-toggle>
       </div>
     </div>
+
+    <div class="projectClass">
+      <button type="button" mat-button (click)="showSidebar = false; drawer.toggle()" *ngIf="showSidebar" class="projectBtn">Verberg sidebar</button>
+    </div>
   </mat-drawer>
 
   <main></main>
 
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle(); showSidebar = true" *ngIf="showSidebar == false">Laat meer zien</button>
+  <div class="main-content">
+    <button type="button" mat-button (click)=" showSidebar = true; drawer.toggle()" *ngIf="!showSidebar">Laat meer zien</button>
   </div>
 
 </mat-drawer-container>
-

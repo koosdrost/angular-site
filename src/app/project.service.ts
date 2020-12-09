@@ -6,7 +6,7 @@ import {BehaviorSubject} from "rxjs";
 })
 export class ProjectService {
 
-  private messageSource = new BehaviorSubject<string>('default message');
+  private messageSource = new BehaviorSubject<string>('BIO');
 
   currentMessage = this.messageSource.asObservable();
 
