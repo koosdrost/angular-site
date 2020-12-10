@@ -11,14 +11,14 @@
     </div>
 
     <div class="projectClass">
-      <button type="button" mat-button (click)="showSidebar = false; drawer.toggle()" *ngIf="showSidebar" class="projectBtn">Verberg sidebar</button>
+      <button type="button" mat-button (click)="showSidebar = false; drawer.toggle()" *ngIf="showSidebar" class="projectBtn">Hide menu</button>
     </div>
   </mat-drawer>
 
   <main></main>
 
   <div class="main-content">
-    <button type="button" mat-button (click)=" showSidebar = true; drawer.toggle()" *ngIf="!showSidebar">Laat meer zien</button>
+    <button type="button" mat-button (click)=" showSidebar = true; drawer.toggle()" *ngIf="!showSidebar">Show menu</button>
   </div>
 
 </mat-drawer-container>
