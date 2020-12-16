@@ -24,6 +24,12 @@ body { margin: 0; font-family: Roboto, "Avenir Next", sans-serif; }
   background-color: lightblue !important;
 }
 
+/** Knoppen in de sidenav **/
+.generalBtn {
+  width: 100%;
+  min-width: 300px;
+}
+
 /** Div rond de projectknoppen **/
 .projectClass {
   padding-top: 10px;
@@ -52,6 +58,7 @@ body { margin: 0; font-family: Roboto, "Avenir Next", sans-serif; }
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 1s;
+  animation-delay: 1s;
 }
 
 .fade3 {
@@ -59,7 +66,8 @@ body { margin: 0; font-family: Roboto, "Avenir Next", sans-serif; }
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 3s;
+  animation: fadein 1s;
+  animation-delay: 2s;
 }
 
 .fade4 {
@@ -67,7 +75,7 @@ body { margin: 0; font-family: Roboto, "Avenir Next", sans-serif; }
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 7s;
+  animation-delay: 3s;
 }
 
 .fade5 {
@@ -75,7 +83,15 @@ body { margin: 0; font-family: Roboto, "Avenir Next", sans-serif; }
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 9s;
+  animation-delay: 4s;
+}
+
+.fade6 {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation-delay: 5s;
 }
 
 .fadeInBackground {
