@@ -21,6 +21,10 @@ body { margin: 0; font-family: Roboto, "Avenir Next", sans-serif; }
   position: initial !important
 }
 
+.mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb {
+  background-color: lightblue !important;
+}
+
 /** Knoppen in de sidenav **/
 .projectBtn {
   width: 100%;
@@ -38,6 +42,7 @@ body { margin: 0; font-family: Roboto, "Avenir Next", sans-serif; }
 .menuBtn {
   width: 100%;
   height: 100%;
+  background-color: lightblue !important;
   position: absolute !important;
   bottom: 2rem !important;
   right: 2rem !important;
