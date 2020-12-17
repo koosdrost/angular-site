@@ -1,7 +1,7 @@
 <mat-drawer-container class="sidenav-container">
+
   <mat-drawer #drawer mode="side">
   <menu style="padding-inline-start: 0px"></menu>
-
     <div class="footer">
       <div class="projectClass">
         <mat-slide-toggle [(ngModel)]="isChecked" class="center" color="primary">
@@ -9,16 +9,17 @@
         </mat-slide-toggle>
       </div>
     </div>
-
     <div class="projectClass">
-      <button type="button" mat-button (click)="showSidebar = false; drawer.toggle()" *ngIf="showSidebar" class="generalBtn">Hide menu</button>
+        <button mat-fab color="primary" (click)="showSidebar = false; drawer.toggle()" *ngIf="showSidebar" class="generalBtn" >
+            <mat-icon>home</mat-icon>
+        </button>
     </div>
   </mat-drawer>
 
-  <main></main>
+    <main></main>
 
-  <div class="main-content">
-    <button type="button" mat-button (click)=" showSidebar = true; drawer.toggle()" *ngIf="!showSidebar">Show menu</button>
-  </div>
+    <button mat-fab color="primary" (click)=" showSidebar = true; drawer.toggle()" *ngIf="!showSidebar" class="menuBtn" >
+        <mat-icon>menu</mat-icon>
+    </button>
 
 </mat-drawer-container>
