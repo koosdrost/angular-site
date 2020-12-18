@@ -6,4 +6,7 @@
 /node_modules/
 ../node_modules/
 *.iml
+dist/
+e2e/
+.idea/
 
