@@ -1,11 +1,9 @@
 */node_modules/*
 */e2e/*
-*/dist/*
 ./idea/*
 ./.idea/*
-/node_modules/
-../node_modules/
+./node_modules/*
+../node_modules/*
 *.iml
 e2e/
 .idea/
-
